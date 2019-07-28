@@ -55,12 +55,14 @@ function addCity(coords, title) {
     return city;
 }
 
-var daluosi = addCity({"latitude": 42.546161, "longitude":72.157407}, "怛逻斯\n高仙芝溃逃, 唐军被俘2万余人")
-var changan = addCity({"latitude": 34.283378, "longitude":108.967554}, "长安\n杜环, 长安人")
-var kangguo = addCity({"latitude": 39.637408, "longitude": 66.997171}, "康国(今乌兹别克斯坦撒马尔罕)\n在米国西南三百余里, 一名萨末建, 土沃人富, 国小, 有神祠名祆, 诸国事者, 本出于此")
-var shiziguo = addCity({"latitude": 7.603473, "longitude": 80.779675}, "师子国(应为今南印度至斯里兰卡一带, 杜环应该是海路回国至此.)\n\n亦曰新檀, 又曰婆罗门, 即南天竺也.\n 国之北, 人尽胡貌, 秋夏炎旱.\n 国之南, 人尽獠面, 四时霖雨, 从此始有佛法寺舍. 人皆儋耳, 布裹腰.")
-var molin = addCity({"latitude": 32.059649, "longitude": -6.684227}, "摩邻国(今摩洛哥一带, 阿拉伯人征服那一带后, 改名为 Maghrib, 音类似‘摩邻’, 后欧洲人讹作摩洛哥(Morocco), 杜环所在军队即是到此处平定当地叛乱)\n\n 在秋萨罗国西南, 渡大碛, 行二千里至其国.\n 其人黑, 其俗犷, 少米麦, 无草木, 马食干鱼, 人餐鹘莽. 鹘莽, 即波斯枣也, 瘴疬特甚.")
-var zhanguo = addCity({"latitude": 33.512411, "longitude": 36.292415}, "苫国(据考证为今叙利亚一带)\n\n 在大食西界, 周回数千里. 造屋兼瓦, 垒石为壁. 米谷殊贱, 有大川东流入阿俱罗.\n 商客籴此粜彼, 往来相继. 人多魁梧, 衣裳宽大, 有似儒服.")
+var daluosi = addCity({"latitude": 42.546161, "longitude":72.157407}, "怛逻斯(今塔吉克斯坦Talas附近)\n\n 唐天宝十年(公元751年) 高仙芝率军与大食帝国(阿拉伯帝国)此处交战, 兵败溃逃, 唐军被俘2万余人, 杜环也是两万人中一员.")
+var changan = addCity({"latitude": 34.283378, "longitude":108.967554}, "长安(今西安)\n杜环, 长安人, 大唐天宝十年(公元751年)参加怛逻斯之战被俘, 所在军队被阿拉伯帝国收编.\n\n 公元756年, 阿拉伯帝国西境摩邻国(今摩洛哥一带)发生叛乱, 杜环所在军队被派往平叛, 途经西亚,北非多地.\n\n 回国后杜环写<经行记>一书, 惜已失传, 唯杜佑<通典>引用此书, 有一千五百余字保留至今")
+var kangguo = addCity({"latitude": 39.637408, "longitude": 66.997171}, "康国(今乌兹别克斯坦撒马尔罕)\n<经行记>原文:\n在米国西南三百余里, 一名萨末建, 土沃人富, 国小, 有神祠名祆, 诸国事者, 本出于此")
+var shiziguo = addCity({"latitude": 7.603473, "longitude": 80.779675}, "师子国(应为今南印度至斯里兰卡一带, 杜环应该是海路回国至此.)\n\n<经行记>原文:\n亦曰新檀, 又曰婆罗门, 即南天竺也.\n 国之北, 人尽胡貌, 秋夏炎旱.\n 国之南, 人尽獠面, 四时霖雨, 从此始有佛法寺舍. 人皆儋耳, 布裹腰.")
+var molin = addCity({"latitude": 32.059649, "longitude": -6.684227}, "摩邻国(今摩洛哥一带, 阿拉伯人征服那一带后, 改名为 Maghrib, 音类似‘摩邻’, 后欧洲人讹作摩洛哥(Morocco), 杜环随阿拉伯军到此处平定当地叛乱)\n\n<经行记>原文:\n 在秧萨罗国西南, 渡大碛, 行二千里至其国.\n 其人黑, 其俗犷, 少米麦, 无草木, 马食干鱼, 人餐鹘莽. 鹘莽, 即波斯枣也, 瘴疬特甚.")
+var zhanguo = addCity({"latitude": 33.512411, "longitude": 36.292415}, "苫国(据考证为今叙利亚一带)\n\n<经行记>原文:\n 在大食西界, 周回数千里. 造屋兼瓦, 垒石为壁. 米谷殊贱, 有大川东流入阿俱罗.\n 商客籴此粜彼, 往来相继. 人多魁梧, 衣裳宽大, 有似儒服.")
+var yangsaluo  = addCity({"latitude": 31.765293, "longitude": 35.211211}, "秧萨罗(今耶路撒冷)")
+var guangzhou = addCity({"latitude": 22.752399, "longitude": 113.603956}, "广州\n 大唐宝应初(公元761年), 杜环所乘商船到达广州.")
 // Add lines
 var lineSeries = chart.series.push(new am4maps.MapArcSeries());
 lineSeries.mapLines.template.line.strokeWidth = 2;
